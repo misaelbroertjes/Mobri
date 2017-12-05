@@ -11,6 +11,6 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<center><p><br /><br /><br /><br /><br /><br />Hartelijk welkom, Deze website is momenteel nog niet beschikbaar. We zien u graag terug in de toekomst!!</p></center>
+<center><p><br /><br /><br /><br /><br /><br />Hartelijk welkom, Deze website is momenteel nog niet beschikbaar. We zien u graag terug in de toekomst!</p></center>
 </body>
 </html>
