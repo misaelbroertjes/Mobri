@@ -1,8 +1,66 @@
-/* ================================================================================= */
+/* ==== reset ==== */
 
-	/* algemene CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-/* ================================================================================= */
+::-webkit-input-placeholder {
+    opacity: 1 !important; /* for chrome */
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    opacity: 1;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+   opacity: 1;
+}
+
+/* ==== algemene css ==== */
 
 html{
     height:100%;
@@ -10,11 +68,12 @@ html{
 }
 
 body{
+	font-family: 'Open Sans', sans-serif;
 	font-size:100%;
 	color:#000;
 	height:100%;
-    width:100%;
-    font-weight:300;
+  width:100%;
+  font-weight:300;
 }
 
 a, a:hover, a:focus, a:visited{
@@ -35,17 +94,33 @@ em{
 	font-style:italic;
 }
 
-h1{	
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 34px;
 	font-weight:800;
-	margin-bottom:0.5em;
+	margin-bottom:1em;
+
+	background-color: #e3a224;
+	width: 34px;
+	height:34px;
+}
+
+h1.alt{
+	background-color: #2d4246;
 }
 
 h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 28px;
 	font-weight:800;
 	margin-bottom:0.5em;
 }
 
 h3{
+	font-size:20px;
+	font-weight:800;
+	margin-bottom:0.5em;
+	padding-top:0.5em;
 }
 
 h4{
@@ -58,28 +133,192 @@ h6{
 }
 
 p{
-	margin:0 0 1em 0;
+
 	margin-bottom:0.5em;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+ul{
+	margin-left:30px;
+}
+
+li{
+	list-style:disc;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.colorGroen{
+	color:#2d4246;
+}
+
+.colorGeel{
+	color:#e3a224;
 }
 
 .col-tight{
 	padding:0px;
 }
 
+.bgGroen{
+	background-color: #2d4246;
+	color:#ffffff;
+}
 
-/* ================================================================================= */
+.borderGeelBtm{
+	border-bottom-color: #e3a224;
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+}
 
-	/* Specifieke CSS */
+.bgGeel{
+	background-color:#e3a224;
+	color:#ffffff;
+}
 
-/* ================================================================================= */
+.fa{
+	color:#e3a224;
+}
+
+/* Carousel */
+
+#myCarousel .item{
+	height: 700px;
+	margin-top:30px;
+}
+
+.carousel-indicators li{
+	width:15px;
+	height:15px;
+	border-radius:0px;
+	background-color:#645f3c;
+	border-color:#e3a224;
+	margin:0px 3px;
+}
+
+.carousel-indicators li.active{
+	width:15px;
+	height:15px;
+	background-color:#e3a224;
+	border-color:#e3a224;
+	margin:0px 3px;
+}
+
+.carousel-indicators .active{
+
+}
+
+.carousel-control.right, .carousel-control.left{
+	background-image: none;
+	width: 45px;
+}
 
 
-/* ================================================================================= */
+/* ==== Specifieke CSS ==== */
 
-	/* Override */
 
-/* ================================================================================= */
+/* Header */
+
+#headerWrapper{
+	height:100px;
+	overflow: visible;
+}
+
+#header img{
+	margin-bottom:45px;
+}
+
+/* Intro */
+
+#vlak{
+	padding:40px 400px 40px 40px;
+	margin-bottom:45px;
+}
+
+#foto img{
+	position: absolute;
+	right:50px;
+	bottom:0px;
+}
+
+/* Technieken */
+
+#technieken {
+	font-size:28px;
+	padding:15px 0px;
+	margin-top: -1px;
+}
+
+#techniekenOverzicht img{
+	margin:0px auto;
+}
+
+/* Skills */
+
+#skillsWrapper{
+	margin-top:-45px;
+	position: relative;
+	z-index: -1;
+	padding-top:85px;
+	padding-bottom:45px;
+}
+
+/* Mobri */
+#mobriWrapper{
+	padding-top:45px;
+	padding-bottom:45px;
+}
+
+/* Werk */
+#werkWrapper{
+	padding-top:45px;
+	padding-bottom:45px;
+}
+
+/* Maps */
+/* Contact */
+#contactInfo h2{
+	margin-top:20px;
+}
+
+#contactForm{
+	background-color:#fff;
+	padding:30px;
+	margin-top:-70px;
+	margin-bottom:-107px;
+	overflow: hidden;
+}
+
+#contactForm .form-control{
+	border-radius: 0px;
+}
+
+#contactForm button{
+	background-color:#2d4246;
+	color:#fff;
+	font-size:24px;
+	font-weight:700;
+	text-transform:uppercase;
+	padding-top:15px;
+	padding-bottom:15px;
+	border-radius: 0px;
+}
+
+/* Footer */
+#footer-top{
+	height: 150px;
+	border-top-color: #e3a224;
+	border-top-width: 10px;
+	border-top-style: solid;
+}
+
+#footer{
+	font-size:16px;
+	padding:5px 0;
+}
+
+/* ==== Override ==== */
 
 @media screen and (max-width: 768px) {
-	
 }
